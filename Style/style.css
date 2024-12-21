@@ -1,0 +1,1934 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(41, 40, 40);
+}
+
+/* ________________________________________HEADER WEBSITE_______________________________ */
+
+.Header {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.Timing-Links {
+    height: 40px;
+    display: flex;
+    width: 42%;
+    justify-content: space-evenly;
+}
+
+.Timing-Links p {
+    height: 40px;
+    font-size: 12px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+.Timing-Links a {
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.Web-Name {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(18, 18, 18);
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+}
+
+.logo>img {
+    width: 100%;
+    height: 80%;
+}
+
+.Web-button {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page-link {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 231, 17);
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1px solid;
+
+}
+
+/* _______________________________________NAV BAR_______________________________ */
+
+.Navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(18, 18, 18);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 100;
+}
+
+.B-Nav-Hide {
+    display: none !important;
+    color: yellow !important;
+}
+
+.B-Nav-Hide:hover>i {
+    color: white;
+}
+
+.M-Nav-Hide {
+    display: Block;
+}
+
+.Nav-Active {
+    background-color: yellow !important;
+    border-radius: 10px;
+    color: black !important;
+}
+
+.Nav-Active1 {
+    color: black !important;
+}
+
+.Nav-List {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nav-List>li {
+    width: 120px;
+    height: 60px;
+    list-style: none;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.Nav-Items {
+    text-decoration: none;
+    color: rgb(235, 227, 0);
+    background-color: transparent;
+
+}
+
+.Toggle-List {
+    color: black;
+    position: absolute;
+    bottom: 104%;
+    width: 120px;
+    height: 0px;
+    opacity: 100;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 101;
+    border-radius: 5px;
+}
+
+.Toggle-List .Toggle-Items {
+    list-style: none;
+    height: 40px;
+    align-content: center;
+    margin: 2px;
+}
+
+.Toggle-Items>a {
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.Nav-List>li:hover .Toggle-List {
+    height: 215px;
+    opacity: 100;
+    font-size: 20px;
+    background-color: rgb(235, 227, 0);
+    border: 1px solid black;
+}
+
+.Toggle-Items:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.Toggle-Items:hover>a {
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    border: 0px;
+}
+
+.fa-solid {
+    display: none;
+}
+
+.Nav-List>li:hover {
+    font-size: 15px;
+}
+
+.Nav-List>li:hover .fa-solid {
+    display: block;
+    font-size: 23px;
+}
+
+/* _________________________________________Side Nav-pannerl________________________________________________________________ */
+
+.SideNavigationContainer {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.SideNavigation-ListContainer {
+    position: relative;
+    width: 35%;
+    height: 100vh;
+    transition: all 1s;
+    background-color: rgb(18, 18, 18);
+}
+
+.SideNavigation-List {
+    width: 100%;
+    height: 60vh;
+    padding: 10px;
+    list-style: none;
+}
+
+.SideNavigation-Items {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    align-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.SideNavigation-Items:hover {
+    background-color: rgb(29, 29, 29);
+    border: 1px solid white;
+    color: yellow;
+
+}
+
+.SideNavigation-Items>a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.SideNavigation-Items:hover>a {
+    color: yellow;
+}
+
+.SideNavigationToggleList {
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.SideNavigation-ToggleItems {
+    background-color: yellow;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.SideNavigation-ToggleItems:hover>a {
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.SideNavigation-ToggleItems>a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+/* _______________________________________________FOR CRAOUSEL_____________________________________________  */
+
+.carousel {
+    width: 100%;
+    height: 600px !important;
+}
+
+.carousel-item>img {
+    width: 100%;
+    height: 600px !important;
+}
+
+.indicator {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 100% !important;
+    background-color: rgb(255, 252, 252) !important;
+    opacity: 100 !important;
+}
+
+.active {
+    background-color: yellow !important;
+}
+
+/* _______________________________________Welcome to restaurant_____________________________________ */
+
+.Welcome-container {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.mainbox {
+    background-color: aliceblue;
+    width: 50%;
+    height: 100%;
+    background-image: url("../Images/Welcome\ DIsh.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.mainbox1 {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.mainbox1>h1 {
+    font-size: 35px;
+}
+
+.mainbox1>p {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.W-box {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.W-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.W-box h3 {
+    text-align: center;
+    font-size: 10px;
+}
+
+/*___________________________________Menu List________________________________________ */
+
+.Menu-container {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(24, 24, 24, 0.966);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+
+}
+
+.Menu {
+    width: 48%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.Table-image {
+    height: 160px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.Table-image>img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    transform: scale(95%);
+    transition: all 0.3s;
+}
+
+.Table-image:hover>img {
+    border: 0px;
+    transform: scale(100%);
+}
+
+.Menu-Text {
+    background-color: rgb(143, 142, 142);
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 60px;
+    width: 55%;
+}
+
+.Menu-Para {
+    background-color: rgb(44, 44, 44);
+    color: yellow;
+    font-size: 15px;
+    padding: 10px;
+    align-content: first baseline;
+}
+
+.MenuPrice {
+
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(143, 142, 142);
+    color: rgb(143, 142, 142);
+    transition: color 0.4s;
+}
+
+.Table-image:hover~.MenuPrice {
+    color: black;
+}
+
+/*___________________________________Gallery________________________________________ */
+
+.G-Con {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.G-Con>h2 {
+    text-align: center;
+    color: white;
+}
+
+.G-Con>div {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 250px;
+    height: 230px;
+}
+
+.box>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Gallery-btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 231, 17);
+    border: 0px;
+    transition: all 0.5s ease;
+}
+
+.Gallery-btn>a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Gallery-btn:hover {
+    border-radius: 50px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.Gallery-btn:hover>a {
+    color: rgb(255, 255, 255);
+}
+
+/* _______________________________________For table BOok FOrm_______________________________________ */
+
+.Table-Container {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.Table-Form {
+    width: 30%;
+    height: 600px;
+    background-color: rgb(255, 238, 0);
+    padding: 20px;
+}
+
+.B-TableContent {
+    width: 70%;
+    height: 600px;
+    padding: 30px;
+    background-image: url("../Images/Table\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 30% 100%;
+    background-position: 90%;
+    background-color: rgba(24, 24, 24, 0.966);
+    color: yellow;
+}
+
+.B-TableContent>h1 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.B-TableContent>h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: Brush Script MT;
+    color: rgb(255, 255, 255);
+}
+
+.B-TableContent>p {
+    width: 60%;
+    margin-top: 10px;
+    color: white;
+}
+
+.table-form {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.T-Firstname,
+.T-Email,
+.T-Country,
+.T-Number,
+.T-Date,
+.T-Time {
+    width: 100%;
+    height: 30px;
+    border: 2px solid black;
+}
+
+
+/* _____________________________________Conatact Form____________________________________ */
+
+.C-Container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.F-container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+
+.text {
+    height: 100%;
+    padding: 40px;
+    width: 40%;
+    background-color: rgb(73, 73, 73);
+}
+
+.text>h1 {
+    width: 200px;
+    font-size: 40px;
+    color: yellow;
+}
+
+.text p {
+    text-align: justify;
+    width: 80%;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 510;
+    color: white;
+}
+
+.icon {
+    margin-top: 20px;
+
+}
+
+.icon>p {
+    margin-bottom: 5px;
+}
+
+.icon>p>i {
+    font-size: 20px;
+    color: black;
+}
+
+.Form {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(202, 202, 202);
+
+}
+
+.Form>form {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: start;
+    padding: 20px;
+}
+
+.C-Firstname,
+.C-Lastname,
+.C-Email,
+.C-Number,
+.C-Location,
+.C-Topic {
+    width: 49%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+/* FOr Feedback */
+
+.F-Firstname,
+.F-Lastname,
+.F-Email,
+.F-Number,
+.F-Location,
+.F-Topic,
+#date,
+#Time {
+    width: 49%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.F-Services,
+.F-Services>h3 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.checkbox-group {
+    width: 49%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    margin: 5px;
+}
+
+/* For ALl buttons */
+
+.Submit-btn {
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    margin-top: 80px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.Submit-btn:hover {
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+}
+
+.Submit-btn:hover>a {
+    color: white !important;
+}
+
+/* _______________________________________________FOR ABOUT US_________________________________________ */
+
+.About-Container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: black;
+}
+
+.About-Text {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    font-size: 20px;
+    padding: 30px;
+}
+
+.About-Text>h1 {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.About-Text>p {
+    color: white;
+    font-weight: 550;
+    width: 80%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.About-Image-Container {
+    width: 50%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+.About-Image-Container>img {
+    width: 100%;
+    height: 100%;
+}
+
+.reader {
+    flex-direction: row-reverse;
+}
+
+
+
+/* _______________________________________________FOR MEALS, AWARDS AND GALLERY______________________________________ */
+
+/* For Gallery */
+.Gallery-container {
+    width: 100%;
+    height: 6000px;
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Gallery-container>.ImagesBox>p {
+    font-size: 25px;
+}
+
+/* For ALL */
+
+.MainHeading {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(235, 227, 0);
+    text-align: center;
+    align-content: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.imgcontainer {
+    width: 100%;
+    height: 1400px;
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.ImagesBox {
+    border: 2px white solid;
+    width: 270px;
+    height: 300px;
+    position: relative;
+}
+
+.ImagesBox>div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+}
+
+.ImagesBox img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ImagesBox p {
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    background-color: rgba(228, 224, 9, 0.815);
+}
+
+.ImagesBox:hover>div {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* ________________________________All Pages Banner____________________________  */
+
+.Banner {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(29, 29, 29);
+    align-content: center;
+    justify-items: center;
+    color: white;
+}
+
+.Banner>h1 {
+    line-height: 50px;
+    color: yellow;
+}
+
+.Banner p {
+    font-size: 15;
+}
+
+/* _______________________________________FOR CATERING___________________________________ */
+
+.image {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.c-image {
+    width: 400px;
+    height: 400px;
+    transition: all 0.2s;
+}
+
+.c-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(90%);
+    transition: transform 0.5s;
+}
+
+.c-image:hover>img {
+    transform: scale(100%);
+    box-shadow: 0px 0px 10px 10px rgb(235, 235, 120);
+}
+
+.Catering-text {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-bottom: 120px;
+}
+
+.Catering-text>h4 {
+    font-size: 15px;
+}
+
+/*  _________________________________________________Recipe of the Month_________________________________________ */
+
+.ROM-Con {
+    width: 100%;
+    height: 400px;
+    padding-bottom: 70px;
+}
+
+.ROM-BoxCon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.ROM {
+    width: 350px;
+    height: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 2);
+    transform: scale(90%);
+    transition: 1s ease;
+    background-color: #1f1e1e;
+
+}
+
+.ROM>img {
+    width: 100%;
+    height: 250px;
+}
+
+.ROM:hover {
+    border: 1px solid black;
+    transform: scale(100%);
+    box-shadow: 0px 0px 10px 10px rgb(235, 235, 120);
+}
+
+
+
+.ROM-content {
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    background-color: #1f1e1e;
+    color: yellow;
+}
+
+/*_____________________________________FOR ALL MENU _____________________________________  */
+
+#Menu-Container {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#Menu-Container>.menuList {
+    height: 100%;
+    width: 33%;
+}
+
+.menuList>img {
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+/* _______________________________________FOR FOOTER_________________________________________ */
+
+.Footer {
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer-text {
+    padding: 20px;
+    width: 60%;
+    height: 300px;
+    text-align: justify;
+}
+
+.Footer-text>h1 {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.Footer-text>p {
+    color: white;
+}
+
+.Footer-Links {
+    padding: 20px;
+    width: 20%;
+    height: 300px;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.Footer-Links>h1 {
+    font-size: 25px;
+    color: Yellow;
+}
+
+.footerlink {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerlink>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ______________________________________MEDIA CURRY_________________________________________ */
+
+/* FOR LARGE SCREEN */
+
+@media screen and (min-width:1400px) {
+
+    /* For Header */
+
+    .information {
+        display: flex;
+        justify-content: space-evenly;
+        width: 35%;
+        font-size: 15px;
+    }
+
+    .Timing-Links {
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .Timing-Links a {
+        font-size: 15px;
+        color: white;
+    }
+
+    /* For Nav bar */
+
+    .Nav-Items {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    /* For crauosel */
+
+    .carousel {
+        width: 100%;
+        height: 800px !important;
+    }
+
+    .carousel-item>img {
+        width: 100%;
+        height: 800px !important;
+    }
+
+    /* For Home Gallery  */
+
+    .G-Con {
+        height: 800px;
+    }
+
+    .G-Con>div {
+        height: 600px;
+    }
+
+    .box {
+        width: 300px;
+        height: 250px;
+    }
+
+    /* For meals, Award Gallery */
+
+    .Gallery-container {
+        height: 8000px;
+    }
+
+    .MainHeading {
+        letter-spacing: 5px;
+        font-size: 45px;
+    }
+
+    .imgcontainer {
+        padding: 20px;
+        height: 1600px;
+    }
+
+    .ImagesBox {
+        width: 400px;
+    }
+
+}
+
+/* FOR LAPTOP SCREEEN */
+
+@media screen and (max-width:1200px) {
+
+    /* For Header */
+
+    .information {
+        width: 45%;
+        font-size: 11px;
+    }
+
+    .Timing-Links {
+        width: 30%;
+    }
+
+    .Timing-Links p {
+        display: none;
+    }
+
+    /* Web Name */
+
+    .Web-Name {
+        height: 60px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 90px;
+    }
+
+    .Web-button {
+        width: 300px;
+    }
+
+    .logo>img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .page-link {
+        width: 90px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    /* For Nav bar */
+
+    .Nav-Items {
+        font-size: 19px;
+    }
+
+    /* Welcome Restaurant */
+
+    .Welcome-container {
+        width: 100%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .mainbox1>h1 {
+        font-size: 25px;
+    }
+
+    .mainbox1>p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .W-box {
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .W-box h3 {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    .MenuPrice {
+        font-size: 15px;
+    }
+
+    /* For Home Gallery   */
+
+    .box {
+        width: 220px;
+        height: 250px;
+    }
+
+    /* FOr About us */
+
+    .About-Text>p {
+        font-size: 15px;
+    }
+
+    /* For Meal, Award and Gallery */
+
+    .Gallery-container {
+        height: 7500px;
+        padding-bottom: 40px;
+    }
+
+    .Gallery-container>.ImagesBox>p {
+        font-size: 25px;
+    }
+
+    .imgcontainer {
+        padding-bottom: 70px;
+        height: 1500px;
+    }
+
+    .ImagesBox {
+        width: 250px;
+        height: 300px;
+    }
+
+    /* For Catering */
+
+    .image {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .c-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* For ROM */
+
+    .ROM {
+        width: 260px;
+    }
+
+    /* For Contact us */
+
+    .text>h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        text-align: justify;
+        width: 95%;
+        font-size: 14px;
+    }
+
+    /* FOr ALL Menu  */
+
+    #Menu-Container>.menuList {
+        height: 80%;
+    }
+
+    /* Footer */
+
+    .Footer {
+        height: 450px;
+    }
+
+    .Footer-Links>h1 {
+        font-size: 18px;
+    }
+
+    .footerlink>a {
+        font-size: 15px;
+    }
+
+}
+
+/* FOR SMALL LAPTOP */
+@media screen and (max-width: 1000px) {
+
+    /* For Home Gallery   */
+    .box {
+        width: 180px;
+        height: 250px;
+    }
+}
+
+/* FOR TABLET SCREEN */
+
+@media screen and (max-width:800px) {
+
+    /* For Header */
+
+    .information {
+        width: 55%;
+        font-size: 10px;
+    }
+
+    .Timing-Links {
+        width: 30%;
+    }
+
+    .Timing-Links p {
+        display: none;
+    }
+
+    /* For Nav bar */
+
+    .B-Nav-Hide {
+        display: block !important;
+    }
+
+    .M-Nav-Hide {
+        display: none !important;
+    }
+
+    /* For Side Navigation */
+
+    .SideNavigationContainer {
+        display: block;
+    }
+
+    /* Welcome Restaurant */
+
+    .Welcome-container {
+        height: 800px;
+        flex-direction: column;
+    }
+
+    .mainbox {
+        background-color: aliceblue;
+        width: 100%;
+    }
+
+    .mainbox1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        height: 70%;
+    }
+
+    .mainbox1>h1 {
+        font-size: 25px;
+    }
+
+    .mainbox1>p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .W-box {
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .W-box h3 {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    /* Menu List */
+
+    .Menu-container {
+        height: 1550px;
+        flex-direction: column;
+    }
+
+    .Menu {
+        width: 100%;
+    }
+
+    .MenuPrice {
+        font-size: 25px;
+    }
+
+    /* For Home Gallery   */
+
+    .G-Con {
+        height: 1500px;
+    }
+
+    .G-Con>div {
+        height: 1300px;
+    }
+
+    .box {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* For Table Book */
+
+    .Table-Container {
+        height: 1100px;
+        flex-direction: column-reverse;
+    }
+
+    .B-TableContent {
+        width: 100%;
+    }
+
+    .Table-Form {
+        width: 100%;
+    }
+
+    /* For About us */
+
+    .About-Container {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .About-Text {
+        width: 100%;
+        height: 600px;
+    }
+
+    .About-Text>p {
+        font-size: 22px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .About-Image-Container {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    /* For meals, Award Gallery */
+
+    .Gallery-container {
+        height: 11000px;
+        padding-bottom: 70px;
+    }
+
+    .imgcontainer {
+        padding-bottom: 60px;
+        height: 2200px;
+    }
+
+    .ImagesBox {
+        width: 280px;
+    }
+
+    /* For Catering */
+
+    .image {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .c-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Catering-text>h4 {
+        font-size: 10px;
+    }
+
+    /* For ROM */
+
+    .ROM {
+        width: 200px;
+    }
+
+    .ROM-content {
+        font-size: 18px;
+    }
+
+    /* For Contact us */
+
+    .text>h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        text-align: justify;
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .C-Firstname,
+    .C-Lastname,
+    .C-Email,
+    .C-Number,
+    .C-Location,
+    .C-Topic {
+        width: 99%;
+        margin-left: 5px;
+    }
+
+    /* FOr Feedback */
+
+    .F-container {
+        height: 1100px;
+    }
+
+    .F-Firstname,
+    .F-Lastname,
+    .F-Email,
+    .F-Number,
+    .F-Location,
+    .F-Topic,
+    #date,
+    #Time {
+        width: 99%;
+        margin-left: 5px;
+    }
+
+    .F-Services,
+    .F-Services>h3 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 5px;
+    }
+
+    .checkbox-group {
+        width: 48%;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .checkbox-group label {
+        font-size: 15px;
+    }
+
+    /* For All Menu */
+
+    #Menu-Container {
+        padding-top: 50px;
+        height: 2000px;
+        width: 70%;
+        margin: auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    #Menu-Container>.menuList {
+        width: 100%;
+       height: 600px;
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+
+    .Footer {
+        height: 500px;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    .Footer-text {
+        padding: 10px;
+        width: 40%;
+    }
+
+    .Footer-text>h1 {
+        font-size: 30px;
+    }
+
+    .Footer-text>p {
+        font-size: 13px;
+    }
+
+    .Footer-Links>h1 {
+        font-size: 17px;
+    }
+
+    .footerlink>a {
+        font-size: 13px;
+    }
+}
+
+/* FOR MOBILE SCREEN */
+
+@media screen and (max-width:600px) {
+
+    /* For Header */
+
+    .information {
+        justify-content: start;
+        gap: 5px;
+        width: 85%;
+        font-size: 6px;
+    }
+
+    .Timing-Links {
+        justify-content: end;
+        width: 32%;
+    }
+
+    .Timing-Links p {
+        display: none;
+    }
+
+    .Timing-Links a {
+        font-size: 11px;
+        margin: 3px;
+    }
+
+    /* Web Name */
+
+    .Web-Name {
+        height: 60px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 90px;
+    }
+
+    .Web-button {
+        width: 200px;
+    }
+
+    .page-link {
+        width: 60px;
+        height: 20px;
+        line-height: 9px;
+        font-size: 9px;
+    }
+
+    /* For side navigation */
+
+    .SideNavigation-Items {
+        font-size: 13px;
+    }
+
+    .SideNavigation-ToggleItems>a {
+        font-size: 13px;
+    }
+
+    /* For Nav bar */
+
+    .Nav-Items {
+        font-size: 13px;
+    }
+
+    .B-Nav-Hide {
+        font-size: 13px !important;
+    }
+
+    .B-Nav-Hide>i {
+        color: white;
+    }
+
+    /* For Carousel */
+
+    .carousel {
+        width: 100%;
+        height: 400px !important;
+    }
+
+    .carousel-item>img {
+        width: 100%;
+        height: 400px !important;
+        object-fit: fill;
+    }
+
+    /* Menu List */
+
+    .Menu-container {
+        padding: 10px;
+    }
+
+    .Menu-Text {
+        width: 40%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .Menu-Para {
+        font-size: 10px;
+    }
+
+    .MenuPrice {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /* For Home Gallery   */
+
+    .G-Con {
+        height: 3000px;
+    }
+
+    .G-Con>div {
+        height: 2800px;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* For BookTable */
+
+    .B-TableContent {
+        background-size: 30% 70%;
+    }
+
+    .B-TableContent>h1 {
+        font-size: 35px;
+    }
+
+    .B-TableContent>p {
+        width: 40%;
+    }
+
+    /* For about us */
+
+    .About-Container {
+        height: 700px;
+    }
+
+    .About-Text {
+        padding: 10px;
+        height: 350px;
+    }
+
+    .About-Text>h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .About-Text>p {
+        font-size: 12px;
+
+    }
+
+    /* For meals, Award Gallery */
+
+    .Gallery-container {
+        height: 1400rem;
+        padding-bottom: 70px;
+    }
+
+    .MainHeading {
+        font-size: 30px;
+    }
+
+    .imgcontainer {
+        padding-top: 30px;
+        height: 5000px;
+    }
+
+    .ImagesBox {
+        width: 400px;
+        height: 300px;
+    }
+
+    /* For All Banner */
+
+    .Banner h1 {
+        font-size: 20px;
+        line-height: 30px;
+        color: yellow;
+    }
+
+    .Banner p {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* For Catering */
+
+    .image {
+        width: 100%;
+        height: 900px;
+        flex-direction: column;
+    }
+
+    .c-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .Catering-text>h4 {
+        font-size: 10px;
+    }
+
+    /* For ROM */
+
+    .ROM-Con {
+        height: 1100px;
+        padding-bottom: 70px;
+    }
+
+    .ROM {
+        width: 380px;
+    }
+
+    .ROM-content {
+        font-size: 18px;
+    }
+
+    /* For Contact us */
+
+    .C-Container {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 30px;
+        height: 500px;
+    }
+
+    .text>h1 {
+        font-size: 25px;
+    }
+
+    .text p {
+        text-align: justify;
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .Form {
+        width: 100%;
+        height: 700px;
+    }
+
+    .C-Firstname,
+    .C-Lastname,
+    .C-Email,
+    .C-Number,
+    .C-Location,
+    .C-Topic {
+        width: 99%;
+        margin-left: 5px;
+    }
+
+    /* FOr Feedback */
+
+    .F-container {
+        flex-direction: column;
+        height: 1500px;
+        padding-bottom: 60px;
+    }
+
+    .f-form {
+        height: 1000px;
+    }
+
+    .F-Firstname,
+    .F-Lastname,
+    .F-Email,
+    .F-Number,
+    .F-Location,
+    .F-Topic,
+    #date,
+    #Time {
+        width: 99%;
+        margin-left: 5px;
+    }
+
+    .F-Services,
+    .F-Services>h3 {
+        font-size: 12px;
+        line-height: 25px;
+        margin-left: 3px;
+    }
+
+    .checkbox-group {
+        width: 48%;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .checkbox-group label {
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .Footer {
+        flex-direction: column;
+        height: 900px;
+        padding: 10px;
+        justify-content: start;
+    }
+
+    .Footer-text {
+        padding: 0%;
+        width: 100%;
+    }
+
+    .Footer-text>p {
+        font-size: 13px;
+    }
+
+    .Footer-Links {
+        height: 250px;
+        width: 100%;
+    }
+
+    .Footer-Links>h1 {
+        font-size: 18px;
+    }
+
+    .footerlink>a {
+        font-size: 15px;
+    }
+
+}
+
+/* FOR SMALL MOBILE SCREEN */
+
+@media screen and (max-width:400px) {
+    .Nav-Items {
+        font-size: 10px;
+    }
+
+    .fa-solid {
+        font-size: 15px !important;
+    }
+
+    .SideNavigation-ListContainer {
+        width: 40%;
+    }
+
+    #Menu-Container {
+        width: 90%;
+    }
+
+}
