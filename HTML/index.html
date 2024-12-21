@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vineger Food Resturant</title>
+
+  <!-- External Link Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- External Link Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- External Style Sheet -->
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+
+  <!-- __________________________________________WEBSITE HEADER_________________________________________ -->
+
+  <Header>
+    <div class="Header">
+      <div class="information">
+        <p>Phone no: <a href="https://wa.me/qr/JEZFTU2MNPNLG1" target="_blank"
+            style="color: white; text-decoration: none;">+92 344-2473744</a></p>
+        <p>Email:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+            style="color: white; text-decoration: none;">sajawalahmed2704f1@gmail.com</a></p>
+      </div>
+      <div class="Timing-Links">
+        <p>Mon/Fri : 09:00 AM to 10:00 PM</p>
+        <p>Sat/Sun : 09:00 AM to 12:00 AM</p>
+        <div style="align-content: center;">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="Web-Name">
+      <div class="logo"><img src="../Images/logo.png" alt=""></div>
+      <div class="Web-button">
+        <a href="#Home-About" class="page-link">About us</a>
+        <a href="#contact" class="page-link">Contact us</a>
+        <a href="#Book-Table" class="page-link">Book Your Table</a>
+      </div>
+    </div>
+  </Header>
+
+  <!-- _____________________________________ SIDE NAVIGATION PANNEL ___________________________________ -->
+
+  <div class="SideNavigationContainer">
+    <div class="SideNavigation-ListContainer">
+      <ul class="SideNavigation-List">
+        <li class="SideNavigation-Items"><a href="Award.html">Awards</a></li>
+        <li class="SideNavigation-Items"><a href="Catering.html">Catering</a></li>
+        <li class="SideNavigation-Items" onclick="Meal()">Meal</li>
+        <div class="SideNavigationToggleList">
+          <div class="SideNavigation-ToggleItems"><a href="Regular.html">Regular</a></div>
+          <div class="SideNavigation-ToggleItems"><a href="Lunch.html">Lunch</a></div>
+          <div class="SideNavigation-ToggleItems"><a href="Snack.html">Snacks</a></div>
+          <div class="SideNavigation-ToggleItems"><a href="Desert.html">Desert</a></div>
+          <div class="SideNavigation-ToggleItems"><a href="Beverages.html">Beverages</a></div>
+        </div>
+        <li class="SideNavigation-Items"><a href="Gallery.html">Gallery</a></li>
+        <li class="SideNavigation-Items"><a href="ROM.html">Recipie of the Month</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- _____________________________________ NAV BAR ___________________________________ -->
+
+  <Nav class="Navbar">
+    <ul class="Nav-List">
+      <li class="Nav-Active">
+        <a href="index.html" class="Nav-Items Nav-Active1">Home</a>
+        <i class="fa-solid fa-house"></i>
+      </li>
+
+      <li>
+        <a href="aboutus.html" class="Nav-Items">About us</a>
+        <i class="fa-solid fa-user"></i>
+      </li>
+
+      <li class="B-Nav-Hide Nav-Items" onclick="clickyou()" style="cursor: pointer;">
+        <i class="fa-solid fa-list"></i>
+        <span>Explore</span>
+      </li>
+
+      <li class="M-Nav-Hide">
+        <span class="Nav-Items hover">Meal</span>
+        <i class="fa-solid fa-utensils"></i>
+        <ul class="Toggle-List">
+          <li class="Toggle-Items" style="position: relative; right: 30px; width: 130%;"><a
+              href="Regular.html">Regular</a></li>
+          <li class="Toggle-Items" style="position: relative; right: 30px; width: 130%;"><a href="Lunch.html">Lunch</a>
+          </li>
+          <li class="Toggle-Items" style="position: relative; right: 30px; width: 130%;"><a href="Snack.html">Snacks</a>
+          </li>
+          <li class="Toggle-Items" style="position: relative; right: 30px; width: 130%;"><a
+              href="Desert.html">Desert</a></li>
+          <li class="Toggle-Items" style="position: relative; right: 30px; width: 130%;"><a
+              href="Beverages.html">Beverages</a></li>
+        </ul>
+      </li>
+
+      <li class="M-Nav-Hide">
+        <a href="Gallery.html" class="Nav-Items">Gallery</a>
+        <i class="fa-solid fa-images"></i>
+
+      </li>
+      <li class="M-Nav-Hide">
+        <a href="Award.html" class="Nav-Items">Awards</a>
+        <i class="fa-solid fa-award"></i>
+
+      </li>
+
+      <li class="M-Nav-Hide">
+        <a href="Catering.html" class="Nav-Items">Catering</a>
+        <i class="fa-solid fa-handshake"></i>
+
+      </li>
+
+      <li class="M-Nav-Hide">
+        <a href="ROM.html" class="Nav-Items"><abbr title="Recipie of the Month"
+            style="text-decoration: none;">R.O.M</abbr></a>
+        <i class="fa-solid fa-bowl-food"></i>
+
+      </li>
+
+      <li>
+        <a href="contactus.html" class="Nav-Items">Contact us</a>
+        <i class="fa-solid fa-users"></i>
+
+      </li>
+
+      <li>
+        <a href="Feedback.html" class="Nav-Items">Feedback</a>
+        <i class="fa-solid fa-comment"></i>
+
+      </li>
+
+    </ul>
+  </Nav>
+
+  <!-- ____________________________________________Carousel_______________________________________ -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active indicator"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+        class="indicator"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+        class="indicator"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"
+        class="indicator"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"
+        class="indicator"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"
+        class="indicator"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Images/Vinegar (1).png" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/Banner 2.webp" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/Banner 3.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/Banner 4.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/Banner 5.jpeg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/Banner 6.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--____________________________________Welcome To Restaurant_________________________  -->
+
+  <div class="Welcome-container" id="Home-About">
+    <div class="mainbox">
+
+    </div>
+    <div class="mainbox1">
+      <h1>Welcome To Our Restaurant</h1>
+      <p>
+        Welcome to Vinegar Food Restaurant, where bold flavors and fresh ingredients come together for an unforgettable
+        dining experience. Our menu features a unique twist on classic dishes with the rich tang of vinegar. Enjoy a
+        warm atmosphere and exceptional service. We're thrilled to have you with us!
+      </p>
+      <button class="Submit-btn" style="margin-top: 10px;"><a href="aboutus.html"
+          style="color: rgb(0, 0, 0); text-decoration: none;">About us</a></button>
+      <br>
+      <div style="width: 80%; display: flex; justify-content: space-evenly;">
+        <div class="W-box">
+          <img src="../Images/W-1.png" width="50%" height="50%" alt="">
+          <h3>Quality food</h3>
+        </div>
+        <div class="W-box">
+          <img src="../Images/W-2.png" width="50%" height="50%" alt="">
+          <h3>Food & Drinks</h3>
+        </div>
+        <div class="W-box">
+          <img src="../Images/w3.png" width="50%" height="50%" alt="">
+          <h3>Expert Chefs</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ____________________________________Menu Conatainer______________________________________ -->
+
+  <div class="Menu-container">
+
+    <!-- Box 1 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/ML-5.webp" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Alfrado Pasta</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/Ml-7.avif" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Soup</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/ML-9.jpg" alt=""></td>
+          <th class="Menu-Text">Avacado Sandwich</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/ML-12.jpg"></td>
+          <th class="Menu-Text">Chicken Karahi</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/MR-3.jpg" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Fried Chicken</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/MR-4.avif" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Zinger Burger</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 7 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/MR-5.webp" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Pizza</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Box 8 -->
+    <div class="Menu">
+      <table>
+        <tr>
+          <td rowspan="2" class="Table-image"><img src="../Images/MR-6.jpg" alt=""></td>
+          <th class="Menu-Text" height="30px" width="70%">Daal Makhni</th>
+          <td class="MenuPrice">Rs : 40</td>
+        </tr>
+        <tr>
+          <td class="Menu-Para" colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button class="Gallery-btn"><a href="menu.html">Menu List</a></button>
+  </div>
+
+  <!-- ____________________________________Gallery______________________________________ -->
+
+  <div class="G-Con">
+    <h2>Our Gallery</h2>
+    <div>
+      <div class="box"><img src="../Images/ML-2.avif" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/ML-5.webp" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/Ml-7.avif" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/ML-9.jpg" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/ML-11.jpg" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/ML-12.jpg" alt="Gallery Images"></div>
+      <div class="box"><img src="../Images/MR-4.avif" alt="Gallery Images"></div>
+      <div class="box"> <img src="../Images/MS-11.webp" alt=" Gallery Images"></div>
+    </div>
+    <button class="Gallery-btn"><a href="Gallery.html">More Images</a></button>
+  </div>
+
+  <!-- __________________________________________Table Book Form___________________________ -->
+
+  <div class="Table-Container" id="Book-Table">
+    <div class="Table-Form">
+      <h3>Take A</h3>
+      <h1>RESERVATION</h1>
+      <form action="" class="table-form">
+        <input type="text" placeholder="First Name" name="Firstname" class="T-Firstname">
+
+        <input type="text" placeholder="Enter Email" name="email" class="T-Email">
+
+        <select class="T-Country" name="country">
+          <option value="Country">Select Your Country</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="India">India</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <input type="number" name="Number" class="T-Number" placeholder="Number">
+
+        <input type="date" name="date" class="T-Date">
+
+        <input type="time" name="Time" class="T-Time">
+
+        <textarea name="Message" style="width: 100%; height: 100px; border: 2px solid black;"
+          placeholder="Enter Your Message"></textarea>
+
+        <button class="Submit-btn" style="margin-top: 0px;">Submit</button>
+      </form>
+    </div>
+    <div class="B-TableContent">
+      <h1>MARK WILLY</h1>
+      <h3>Hood Chef</h3>
+      <p>Rorem ipsum dolor sit amet, consectetur adipisicing elitsed eiusmod tempor incididunt.</p>
+    </div>
+  </div>
+
+  <!-- __________________________________________Contact Form___________________________ -->
+
+  <div class="Contact-Form-Home" id="contact">
+    <div class="C-Container ">
+      <!-- COntainer For Text  -->
+      <div class="text">
+
+        <h1>Have a Question?</h1>
+
+        <p>We’re here to help! Whether you have a question, need assistance, or just want to share feedback, feel free
+          to
+          reach out to us. Simply fill out the form below with your details and message, and we’ll get back to you as
+          soon
+          as possible. Your inquiries are important to us, and we strive to provide prompt and helpful responses. Thank
+          you for connecting with us!</p>
+
+        <p>Everyone gets a personlized response, So please Allow 24 hour during business hour for a reply. Our business
+          hour is Everyday 9 AM to 9 PM </p>
+
+        <div class="icon">
+          <p> <i class="fa-solid fa-envelope"></i> &nbsp; hello@k18hair.com</p>
+          <p> <i class="fa-solid fa-phone"></i> &nbsp; 1 844-564-0382</p>
+          <p> <i class="fa-solid fa-comment"></i> &nbsp; Chat with us</p>
+        </div>
+
+      </div>
+
+      <!-- COntainer For Form  -->
+      <div class="Form">
+        <form action="">
+          <input type="text" name="firstname" placeholder="*First name.." class="C-Firstname">
+          <input type="text" name="lastname" placeholder="*last name.." class="C-Lastname">
+          <input type="text" name="Email" placeholder="*Email.." class="C-Email">
+          <input type="text" name="lastname" placeholder="*Phone number (optional).." class="C-Number">
+
+          <select name="Location" id="Location" class="C-Location">
+            <option value="Empty">Set your location</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Faislabad">Faislabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Multan">Multan</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Gujranwala">Gujrawala</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Sheikhpura">Sheikupura</option>
+          </select>
+
+          <select name="Topic" id="Topic" class="C-Topic">
+            <option value="Empty">Set your Topic</option>
+            <option value="Karachi">Dishes</option>
+            <option value="Faislabad">Dining</option>
+            <option value="Rawalpindi">Take Away</option>
+            <option value="Multan">For Events</option>
+            <option value="Islamabad">Other</option>
+          </select>
+
+          <textarea id="subject" name="subject" placeholder="Message.." style=" margin-left:5px; 
+            border: 2px solid black;
+            width: 99%; 
+            margin-bottom: 30px;
+            padding: 10px;
+            height: 200px;"></textarea>
+
+          <input type="submit" value="Submit" class="Submit-btn" style="margin-top: 0%; margin-left: 5px;">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- _____________________________________Footer ______________________________________________-->
+
+  <div class="Footer">
+    <div class="Footer-text">
+      <h1>ABOUT</h1>
+      <P>Welcome to Vinegar Food Restaurant, where we bring the bold, tangy flavors of vinegar to the heart of every
+        dish. Our passion for culinary creativity is reflected in our unique approach to blending traditional
+        ingredients with the distinctive zing of vinegar, elevating the taste of each meal.
+        Whether you're craving tangy marinades, zesty sauces, or delightful pickled treats, we craft every dish with the
+        finest ingredients to ensure a memorable dining experience. At Vinegar Food Restaurant, we invite you to savor
+        the art of vinegar-inspired cuisine, where every bite is a burst of flavor and satisfaction</P>
+    </div>
+    <div class="Footer-Links">
+      <h1>CATEGORIES</h1>
+      <div class="footerlink">
+        <a href="Award.html">AWARD</a>
+        <a href="ROM.html">RECIPIE OF THE MONTH</a>
+        <a href="Catering.html">CATERING</a>
+      </div>
+
+
+    </div>
+    <div class="Footer-Links">
+      <h1>QUICK LINK</h1>
+      <div class="footerlink">
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="Feedback.html">FEEDBACK</a>
+        <a href="Gallery.html">GALLERY</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../Javascript/script.js"></script>
+</body>
+
+</html>

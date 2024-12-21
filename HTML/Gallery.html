@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vineger Food Resturant</title>
+
+    <!-- External Link Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External Style Sheet -->
+
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <!-- __________________________________________WEBSITE HEADER_________________________________________ -->
+
+    <Header>
+        <div class="Header">
+            <div class="information">
+                <p>Phone no: <a href="https://wa.me/qr/JEZFTU2MNPNLG1" target="_blank"
+                        style="color: white; text-decoration: none;">+92 344-2473744</a></p>
+                <p>Email:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+                        style="color: white; text-decoration: none;">sajawalahmed2704f1@gmail.com</a></p>
+            </div>
+            <div class="Timing-Links">
+                <p>Mon/Fri : 09:00 AM to 10:00 PM</p>
+                <p>Sat/Sun : 09:00 AM to 12:00 AM</p>
+                <div style="align-content: center;">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </Header>
+
+    <!-- _____________________________________ SIDE NAVIGATION PANNEL ___________________________________ -->
+
+    <div class="SideNavigationContainer">
+        <div class="SideNavigation-ListContainer">
+            <ul class="SideNavigation-List">
+                <li class="SideNavigation-Items"><a href="Award.html">Awards</a></li>
+                <li class="SideNavigation-Items"><a href="Catering.html">Catering</a></li>
+                <li class="SideNavigation-Items" onclick="Meal()">Meal</li>
+                <div class="SideNavigationToggleList">
+                    <div class="SideNavigation-ToggleItems"><a href="Regular.html">Regular</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Lunch.html">Lunch</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Snack.html">Snacks</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Desert.html">Desert</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Beverages.html">Beverages</a></div>
+                </div>
+                <li class="SideNavigation-Items"><a href="Gallery.html">Gallery</a></li>
+                <li class="SideNavigation-Items"><a href="ROM.html">Recipie of the Month</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- _____________________________________ NAV BAR ___________________________________ -->
+
+    <Nav class="Navbar">
+        <ul class="Nav-List">
+            <li>
+                <a href="index.html" class="Nav-Items">Home</a>
+                <i class="fa-solid fa-house"></i>
+            </li>
+
+            <li>
+                <a href="aboutus.html" class="Nav-Items">About us</a>
+                <i class="fa-solid fa-user"></i>
+            </li>
+
+            <li class="B-Nav-Hide Nav-Items" onclick="clickyou()" style="cursor: pointer;">
+                <i class="fa-solid fa-list"></i>
+                Explore
+            </li>
+
+            <li class="M-Nav-Hide">
+                <span class="Nav-Items hover">Meal</span>
+                <i class="fa-solid fa-utensils"></i>
+                <ul class="Toggle-List">
+                    <li class="Toggle-Items"><a href="Regular.html">Regular</a></li>
+                    <li class="Toggle-Items"><a href="Lunch.html">Lunch</a></li>
+                    <li class="Toggle-Items"><a href="Snack.html">Snacks</a></li>
+                    <li class="Toggle-Items"><a href="Desert.html">Desert</a></li>
+                    <li class="Toggle-Items"><a href="Beverages.html">Beverages</a></li>
+                </ul>
+            </li>
+
+            <li class="M-Nav-Hide Nav-Active">
+                <a href="Gallery.html" class="Nav-Items Nav-Active1">Gallery</a>
+                <i class="fa-solid fa-images"></i>
+
+            </li>
+            <li class="M-Nav-Hide ">
+                <a href="Award.html" class="Nav-Items ">Awards</a>
+                <i class="fa-solid fa-award"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="Catering.html" class="Nav-Items">Catering</a>
+                <i class="fa-solid fa-handshake"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="ROM.html" class="Nav-Items"><abbr title="Recipie of the Month"
+                        style="text-decoration: none;">R.O.M</abbr></a>
+                <i class="fa-solid fa-bowl-food"></i>
+
+            </li>
+
+            <li>
+                <a href="contactus.html" class="Nav-Items">Contact us</a>
+                <i class="fa-solid fa-users"></i>
+
+            </li>
+
+            <li>
+                <a href="Feedback.html" class="Nav-Items">Feedback</a>
+                <i class="fa-solid fa-comment"></i>
+
+            </li>
+
+        </ul>
+    </Nav>
+
+    <!-- __________________________________________Gallery SECTION__________________________________________________-->
+
+    <h1 class="MainHeading"> Our Gallery</h1>
+
+    <div class="Gallery-container">
+
+        <!-- REGULAR  -->
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-1.webp" alt="REGULAR IMAGES">
+            <p>OMELETTE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-2.webp" alt="REGULAR IMAGES">
+            <p>PRATHA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-3.jpg" alt="REGULAR IMAGES">
+            <p>CHICKEN KARAHI</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-4.avif" alt="REGULAR IMAGES">
+            <p>ZINGER BURGER</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-5.webp" alt="REGULAR IMAGES">
+            <p>PIZZA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-7.webp" alt="REGULAR IMAGES">
+            <p>HALEEM</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-8.webp" alt="REGULAR IMAGES">
+            <p>BIRYANI</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-9.jpg" alt="REGULAR IMAGES">
+            <p>CHICKEN NIHARI</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-10.jpg" alt="REGULAR IMAGES">
+            <p>CHICKEN SPINACH</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/Mr-11.webp" alt="REGULAR IMAGES">
+            <p>KEEMA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-12.jpg" alt="REGULAR IMAGES">
+            <p>PALAO</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MR-6.jpg" alt="REGULAR IMAGES">
+            <p>DAL MAKHNI</p>
+        </div>
+
+        <!-- LUNCH -->
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-1.webp" alt="Award image">
+            <p>FISH CURRY</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-2.avif" alt="Award image">
+            <p>CHICKEN SALAD</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-3.avif" alt="Award image">
+            <p>MEXICIAN SALAD</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-5.webp" alt="Award image">
+            <p>SHOWRMA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-6.jpg" alt="Award image">
+            <p>CHICKEN RICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-4.avif" alt="Award image">
+            <p>BRINJAL</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/Ml-7.avif" alt="Award image">
+            <p>SOUP</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-8.jpg" alt="Award image">
+            <p>PASTA
+            <p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-9.jpg" alt="Award image">
+            <p>AVACADO SANDWICH</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-10.webp" alt="Award image">
+            <p>BEEF SPINACH</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-11.jpg" alt="Award image">
+            <p>SEKH KABAB</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/ML-12.jpg" alt="Award image">
+            <p>CHICKEN KARAHI</p>
+        </div>
+
+        <!-- SNACK -->
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-1.jpeg" alt="Award image">
+            <p>HEART BISCUIT</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-2.webp" alt="Award image">
+            <p>DRY FRUITS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-3.webp" alt="Award image">
+            <p>PEANUT STICK</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-4.jpg" alt="Award image">
+            <p>POP CORN</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-5.jpg" alt="Award image">
+            <p>CHIPS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-6.jpg" alt="Award image">
+            <p>CHEESE STICKS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-7.webp" alt="Award image">
+            <p>CREAM SANDWICH</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-8.jpg" alt="Award image">
+            <p>PATIS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-9.jpg" alt="Award image">
+            <p>FRIES</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-10.jpg" alt="Award image">
+            <p>PIZZA </p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-11.webp" alt="Award image">
+            <p>CHEESE BALL</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MS-12.jpg" alt="Award image">
+            <p>SALAT ROLL</p>
+        </div>
+
+        <!-- DESERT -->
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-1.webp" alt="Desert Images">
+            <p>ALL CAKES</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-2.webp" alt="Desert Images">
+            <p>CHOCLATE VANILA CAKE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-3.webp" alt="Desert Images">
+            <p>PIE CAKE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-4.jpeg" alt="Desert Images">
+            <p>CREAM ROLL</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-5.avif" alt="Desert Images">
+            <p>GULAB JAMUN</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-6.jpg" alt="Desert Images">
+            <p>CARROT CKAE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-7.avif" alt="Desert Images">
+            <p>CHOCLATE BALLS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-8.avif" alt="Desert Images">
+            <p>CREAMY PIE CAKE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-9.jpg" alt="Desert Images">
+            <p>FRUITY CAKE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-10.jpeg" alt="Desert Images">
+            <p>BANANA CAKE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-11.avif" alt="Desert Images">
+            <p>#############</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MD-12.avif" alt="Desert Images">
+            <p>PAN CAKE</p>
+        </div>
+
+        <!-- bEVERAGES -->
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-1.webp" alt="Award image">
+            <p>BLACK COFFEE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-2.webp" alt="Award image">
+            <p>ORANGE JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-3.jpg" alt="Award image">
+            <p>LEMON JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-4.webp" alt="Award image">
+            <p>COLD COFFEE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-5.webp" alt="Award image">
+            <p>FRUITY FALODA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-6.jpeg" alt="Award image">
+            <p>JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-7.jpg" alt="Award image">
+            <p>MILKY OREO JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-8.jpg" alt="Award image">
+            <p> JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-9.jpg" alt="Award image">
+            <p>COCONUT WATER</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-10.jpg" alt="Award image">
+            <p>GREEN TEA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-11.jpg" alt="Award image">
+            <p>COLD-DRINKS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-1.webp" alt="Award image">
+            <p>BLACK COFFEE</p>
+        </div>
+    </div>
+
+    <!-- _____________________________________Footer ______________________________________________-->
+
+    <div class="Footer">
+        <div class="Footer-text">
+            <h1>ABOUT</h1>
+            <P>Welcome to Vinegar Food Restaurant, where we bring the bold, tangy flavors of vinegar to the heart of
+                every
+                dish. Our passion for culinary creativity is reflected in our unique approach to blending traditional
+                ingredients with the distinctive zing of vinegar, elevating the taste of each meal.
+                Whether you're craving tangy marinades, zesty sauces, or delightful pickled treats, we craft every dish
+                with the
+                finest ingredients to ensure a memorable dining experience. At Vinegar Food Restaurant, we invite you to
+                savor
+                the art of vinegar-inspired cuisine, where every bite is a burst of flavor and satisfaction</P>
+        </div>
+        <div class="Footer-Links">
+            <h1>CATEGORIES</h1>
+            <div class="footerlink">
+                <a href="Award.html">AWARD</a>
+                <a href="ROM.html">RECIPIE OF THE MONTH</a>
+                <a href="Catering.html">CATERING</a>
+            </div>
+
+
+        </div>
+        <div class="Footer-Links">
+            <h1>QUICK LINK</h1>
+            <div class="footerlink">
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="Feedback.html">FEEDBACK</a>
+                <a href="Gallery.html">GALLERY</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Javascript/script.js"></script>
+</body>
+
+</html>

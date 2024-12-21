@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vineger Food Resturant</title>
+
+    <!-- External Link Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External Style Sheet -->
+     
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <!-- __________________________________________WEBSITE HEADER_________________________________________ -->
+
+    <Header>
+        <div class="Header">
+            <div class="information">
+                <p>Phone no: <a href="https://wa.me/qr/JEZFTU2MNPNLG1" target="_blank"
+                        style="color: white; text-decoration: none;">+92 344-2473744</a></p>
+                <p>Email:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+                        style="color: white; text-decoration: none;">sajawalahmed2704f1@gmail.com</a></p>
+            </div>
+            <div class="Timing-Links">
+                <p>Mon/Fri : 09:00 AM to 10:00 PM</p>
+                <p>Sat/Sun : 09:00 AM to 12:00 AM</p>
+                <div style="align-content: center;">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </Header>
+
+    <!-- _____________________________________ SIDE NAVIGATION PANNEL ___________________________________ -->
+
+    <div class="SideNavigationContainer">
+        <div class="SideNavigation-ListContainer">
+            <ul class="SideNavigation-List">
+                <li class="SideNavigation-Items"><a href="Award.html">Awards</a></li>
+                <li class="SideNavigation-Items"><a href="Catering.html">Catering</a></li>
+                <li class="SideNavigation-Items" onclick="Meal()">Meal</li>
+                <div class="SideNavigationToggleList">
+                    <div class="SideNavigation-ToggleItems"><a href="Regular.html">Regular</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Lunch.html">Lunch</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Snack.html">Snacks</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Desert.html">Desert</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Beverages.html">Beverages</a></div>
+                </div>
+                <li class="SideNavigation-Items"><a href="Gallery.html">Gallery</a></li>
+                <li class="SideNavigation-Items"><a href="ROM.html">Recipie of the Month</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- _____________________________________ NAV BAR ___________________________________ -->
+
+    <Nav class="Navbar">
+        <ul class="Nav-List">
+            <li>
+                <a href="index.html" class="Nav-Items">Home</a>
+                <i class="fa-solid fa-house"></i>
+            </li>
+
+            <li>
+                <a href="aboutus.html" class="Nav-Items">About us</a>
+                <i class="fa-solid fa-user"></i>
+            </li>
+
+            <li class="B-Nav-Hide Nav-Items" onclick="clickyou()" style="cursor: pointer;">
+                <i class="fa-solid fa-list"></i>
+                Explore
+            </li>
+
+            <li class="M-Nav-Hide">
+                <span class="Nav-Items hover">Meal</span>
+                <i class="fa-solid fa-utensils"></i>
+                <ul class="Toggle-List">
+                    <li class="Toggle-Items"><a href="Regular.html">Regular</a></li>
+                    <li class="Toggle-Items"><a href="Lunch.html">Lunch</a></li>
+                    <li class="Toggle-Items"><a href="Snack.html">Snacks</a></li>
+                    <li class="Toggle-Items"><a href="Desert.html">Desert</a></li>
+                    <li class="Toggle-Items"><a href="Beverages.html">Beverages</a></li>
+                </ul>
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="Gallery.html" class="Nav-Items">Gallery</a>
+                <i class="fa-solid fa-images"></i>
+
+            </li>
+            <li class="M-Nav-Hide">
+                <a href="Award.html" class="Nav-Items">Awards</a>
+                <i class="fa-solid fa-award"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="Catering.html" class="Nav-Items">Catering</a>
+                <i class="fa-solid fa-handshake"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="ROM.html" class="Nav-Items"><abbr title="Recipie of the Month"
+                        style="text-decoration: none;">R.O.M</abbr></a>
+                <i class="fa-solid fa-bowl-food"></i>
+
+            </li>
+
+            <li>
+                <a href="contactus.html" class="Nav-Items">Contact us</a>
+                <i class="fa-solid fa-users"></i>
+
+            </li>
+
+            <li>
+                <a href="Feedback.html" class="Nav-Items">Feedback</a>
+                <i class="fa-solid fa-comment"></i>
+
+            </li>
+
+        </ul>
+    </Nav>
+    <!-- ___________________________MENU CONTAINER___________________________________ -->
+    <div id="Menu-Container">
+        <div class="menuList"><img src="../Images/1.png" alt=""></div>
+        <div class="menuList"><img src="../Images/2.png" alt=""></div>
+        <div class="menuList"><img src="../Images/3.png" alt=""></div>
+    </div>
+
+    <script src="../Javascript/script.js"></script>
+</body>
+
+</html>

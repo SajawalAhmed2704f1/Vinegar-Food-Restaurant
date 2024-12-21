@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vineger Food Resturant</title>
+
+    <!-- External Link Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External Style Sheet -->
+     
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <!-- __________________________________________WEBSITE HEADER_________________________________________ -->
+
+    <Header>
+        <div class="Header">
+            <div class="information">
+                <p>Phone no: <a href="https://wa.me/qr/JEZFTU2MNPNLG1" target="_blank"
+                        style="color: white; text-decoration: none;">+92 344-2473744</a></p>
+                <p>Email:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+                        style="color: white; text-decoration: none;">sajawalahmed2704f1@gmail.com</a></p>
+            </div>
+            <div class="Timing-Links">
+                <p>Mon/Fri : 09:00 AM to 10:00 PM</p>
+                <p>Sat/Sun : 09:00 AM to 12:00 AM</p>
+                <div style="align-content: center;">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </Header>
+
+    <!-- _____________________________________ SIDE NAVIGATION PANNEL ___________________________________ -->
+
+    <div class="SideNavigationContainer">
+        <div class="SideNavigation-ListContainer">
+            <ul class="SideNavigation-List">
+                <li class="SideNavigation-Items"><a href="BEVERAGES.html">BEVERAGESs</a></li>
+                <li class="SideNavigation-Items"><a href="Catering.html">Catering</a></li>
+                <li class="SideNavigation-Items" onclick="Meal()">Meal</li>
+                <div class="SideNavigationToggleList">
+                    <div class="SideNavigation-ToggleItems"><a href="Regular.html">Regular</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Lunch.html">Lunch</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Snack.html">Snacks</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Desert.html">Desert</a></div>
+                    <div class="SideNavigation-ToggleItems"><a href="Beverages.html">Beverages</a></div>
+                </div>
+                <li class="SideNavigation-Items"><a href="Gallery.html">Gallery</a></li>
+                <li class="SideNavigation-Items"><a href="ROM.html">Recipie of the Month</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- _____________________________________ NAV BAR ___________________________________ -->
+
+    <Nav class="Navbar">
+        <ul class="Nav-List">
+            <li>
+                <a href="index.html" class="Nav-Items">Home</a>
+                <i class="fa-solid fa-house"></i>
+            </li>
+
+            <li>
+                <a href="aboutus.html" class="Nav-Items">About us</a>
+                <i class="fa-solid fa-user"></i>
+            </li>
+
+            <li class="B-Nav-Hide Nav-Items" onclick="clickyou()" style="cursor: pointer;">
+                <i class="fa-solid fa-list"></i>
+                Explore
+            </li>
+
+            <li class="M-Nav-Hide Nav-Active">
+                <span class="Nav-Items hover Nav-Active1">Meal</span>
+                <i class="fa-solid fa-utensils"></i>
+                <ul class="Toggle-List">
+                    <li class="Toggle-Items"><a href="Regular.html">Regular</a></li>
+                    <li class="Toggle-Items"><a href="Lunch.html">Lunch</a></li>
+                    <li class="Toggle-Items"><a href="Snack.html">Snacks</a></li>
+                    <li class="Toggle-Items"><a href="Desert.html">Desert</a></li>
+                    <li class="Toggle-Items"><a href="Beverages.html">Beverages</a></li>
+                </ul>
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="Gallery.html" class="Nav-Items">Gallery</a>
+                <i class="fa-solid fa-images"></i>
+
+            </li>
+            <li class="M-Nav-Hide">
+                <a href="BEVERAGES.html" class="Nav-Items">BEVERAGESs</a>
+                <i class="fa-solid fa-BEVERAGES"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="Catering.html" class="Nav-Items">Catering</a>
+                <i class="fa-solid fa-handshake"></i>
+
+            </li>
+
+            <li class="M-Nav-Hide">
+                <a href="ROM.html" class="Nav-Items"><abbr title="Recipie of the Month"
+                        style="text-decoration: none;">R.O.M</abbr></a>
+                <i class="fa-solid fa-bowl-food"></i>
+
+            </li>
+
+            <li>
+                <a href="contactus.html" class="Nav-Items">Contact us</a>
+                <i class="fa-solid fa-users"></i>
+
+            </li>
+
+            <li>
+                <a href="Feedback.html" class="Nav-Items">Feedback</a>
+                <i class="fa-solid fa-comment"></i>
+
+            </li>
+
+        </ul>
+    </Nav>
+
+    <!-- __________________________________________Bevarage__________________________________________________-->
+
+    <h1 class="MainHeading">BEVERAGES</h1>
+
+    <div class="imgcontainer">
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-1.webp" alt="BEVERAGES image">
+            <p>BLACK COFFEE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-2.webp" alt="BEVERAGES image">
+            <p>ORANGE JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-3.jpg" alt="BEVERAGES image">
+            <p>LEMON JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-4.webp" alt="BEVERAGES image">
+            <p>COLD COFFEE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-5.webp" alt="BEVERAGES image">
+            <p>FRUITY FALODA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-6.jpeg" alt="BEVERAGES image">
+            <p>JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-7.jpg" alt="BEVERAGES image">
+            <p>MILKY OREO</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-8.jpg" alt="BEVERAGES image">
+            <p> JUICE</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-9.jpg" alt="BEVERAGES image">
+            <p>COCONUT WATER</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-10.jpg" alt="BEVERAGES image">
+            <p>GREEN TEA</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-11.jpg" alt="BEVERAGES image">
+            <p>COLD-DRINKS</p>
+        </div>
+
+        <div class="ImagesBox">
+            <div></div>
+            <img src="../Images/MB-1.webp" alt="BEVERAGES image">
+            <p>BLACK COFFEE</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="Footer">
+        <div class="Footer-text">
+            <h1>ABOUT</h1>
+            <P>Welcome to Vinegar Food Restaurant, where we bring the bold, tangy flavors of vinegar to the heart of
+                every
+                dish. Our passion for culinary creativity is reflected in our unique approach to blending traditional
+                ingredients with the distinctive zing of vinegar, elevating the taste of each meal.
+                Whether you're craving tangy marinades, zesty sauces, or delightful pickled treats, we craft every dish
+                with the
+                finest ingredients to ensure a memorable dining experience. At Vinegar Food Restaurant, we invite you to
+                savor
+                the art of vinegar-inspired cuisine, where every bite is a burst of flavor and satisfaction</P>
+        </div>
+        <div class="Footer-Links">
+            <h1>CATEGORIES</h1>
+            <div class="footerlink">
+                <a href="BEVERAGES.html">BEVERAGES</a>
+                <a href="ROM.html">RECIPIE OF THE MONTH</a>
+                <a href="Catering.html">CATERING</a>
+            </div>
+
+
+        </div>
+        <div class="Footer-Links">
+            <h1>QUICK LINK</h1>
+            <div class="footerlink">
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="Feedback.html">FEEDBACK</a>
+                <a href="Gallery.html">GALLERY</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Javascript/script.js"></script>
+</body>
+
+</html>
