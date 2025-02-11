@@ -157,12 +157,12 @@
 
     <div class="Form">
       <form action="">
-        <input type="text" id="fname" name="firstname" placeholder="*First name.." class="C-Firstname">
-        <input type="text" id="lname" name="lastname" placeholder="*last name.." class="C-Lastname">
-        <input type="text" id="email" name="Email" placeholder="*Email.." class="C-Email">
-        <input type="text" id="phone number" name="lastname" placeholder="*Phone number (optional).." class="C-Number">
+        <input type="text" id="fname" name="firstname" placeholder="*First name.." class="C-Firstname" pattern="[A-z]{1}[A-Za-z]{1,}" required>
+        <input type="text" id="lname" name="lastname" placeholder="*last name.." class="C-Lastname" pattern="[A-z]{1}[A-Za-z]{1,}" required>
+        <input type="email" id="email" name="Email" placeholder="*Email.." class="C-Email" required>
+        <input type="text" id="phone number" name="lastname" placeholder="*Phone number (optional).." class="C-Number" pattern="[0-9]{11}" required>
 
-        <select name="Location" id="Location" class="C-Location">
+        <select name="Location" id="Location" class="C-Location" required>
           <option value="Empty">Set your location</option>
           <option value="Karachi">Karachi</option>
           <option value="Faislabad">Faislabad</option>
@@ -175,7 +175,7 @@
           <option value="Sheikhpura">Sheikupura</option>
         </select>
 
-        <select name="Topic" id="Topic" class="C-Topic">
+        <select name="Topic" id="Topic" class="C-Topic" required>
           <option value="Empty">Set your Topic</option>
           <option value="Karachi">Dishes</option>
           <option value="Faislabad">Dining</option>
@@ -189,7 +189,7 @@
         width: 99%; 
         margin-bottom: 30px;
         padding: 10px;
-        height: 200px;"></textarea>
+        height: 200px;" required></textarea>
 
         <input type="submit" value="Submit" class="Submit-btn" style="margin-top: 0%; margin-left: 5px;">
 
