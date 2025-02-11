@@ -603,13 +603,14 @@ table {
     height: 100%;
     padding: 40px;
     width: 40%;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(255, 255, 255);
+
 }
 
 .text>h1 {
     width: 200px;
     font-size: 40px;
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 .text p {
@@ -618,7 +619,7 @@ table {
     font-size: 16px;
     margin-top: 10px;
     font-weight: 510;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .icon {
@@ -638,8 +639,7 @@ table {
 .Form {
     height: 100%;
     width: 60%;
-    background-color: rgb(202, 202, 202);
-
+    background-color: rgb(145, 145, 145);
 }
 
 .Form>form {
