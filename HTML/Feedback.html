@@ -161,9 +161,9 @@
     <div class="Form f-form">
       <form action="">
         <h3 style="width: 100%; margin-bottom: 10px;">Information</h3>
-        <input type="text" id="fname" name="firstname" placeholder="*First name.." class="F-Firstname">
-        <input type="text" id="email" name="Email" placeholder="*Email.." class="F-Email">
-        <input type="text" id="phone number" name="lastname" placeholder="*Phone number (optional).." class="F-Number">
+        <input type="text" id="fname" name="firstname" placeholder="*First name.." class="F-Firstname" pattern="[A-z]{1}[A-Za-z]{1,}" required>
+        <input type="email" id="email" name="Email" placeholder="*Email.." class="F-Email" required>
+        <input type="text" id="phone number" name="lastname" placeholder="*Phone number (optional).." class="F-Number" pattern="[0-9]{11}" required>
 
         <select name="Location" id="Location" class="F-Location">
           <option value="Empty">Set your location</option>
@@ -178,8 +178,8 @@
           <option value="Sheikhpura">Sheikupura</option>
         </select>
 
-        <input type="date" name="" id="date">
-        <input type="time" name="" id="Time">
+        <input type="date" name="" id="date" required>
+        <input type="time" name="" id="Time" required>
 
         <div class="F-Services">
           <h3>Which Service</h3>
@@ -263,7 +263,7 @@
         </div>
 
         <label for="" style="width: 100%;height: 100px;">Remarks and any suggestion:
-          <textarea name="" id="" style="width: 100%;height: 150px; "></textarea>
+          <textarea name="" id="" style="width: 100%;height: 150px; " required></textarea>
         </label>
         <input type="submit" value="Submit" class="Submit-btn">
       </form>
